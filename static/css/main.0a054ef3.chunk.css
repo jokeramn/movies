@@ -1,0 +1,2 @@
+*{margin:0;padding:0}body,html{height:100%}nav{padding:0 1rem}.wrapper{display:flex;flex-direction:column;height:100%}.content{flex:1 0 auto;padding:1.5rem 5rem}footer{flex:0 0 auto}.movies{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));grid-gap:1rem;gap:1rem}.search-btn{position:absolute;top:0;right:.5rem}.radio-buttons{display:flex;width:800px;justify-content:space-between;align-items:center;margin-bottom:2rem}
+/*# sourceMappingURL=main.0a054ef3.chunk.css.map */
