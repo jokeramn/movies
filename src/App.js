@@ -14,7 +14,7 @@ function App() {
   const [type, setType] = useState('all')
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${valueOfMovie}${type !== 'all' ? `&type=${type}` : ''}`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${valueOfMovie}${type !== 'all' ? `&type=${type}` : ''}`)
       .then(res => res.json())
       .then(data => {
         if (data.Search !== undefined) {
@@ -42,7 +42,7 @@ function App() {
     <>
       <Header />
       <div className='wrapper'>
-        {error ? <div>ОШИБКА, НЕПРАВИЛЬНО ВВЕДЕННЫЙ ФИЛЬМ</div> : (<Main movies={movies} onSearchMovie={onSearchMovie} handleChangeType={handleChangeType} valueOfType={type} />)}
+        {error ? <div>ОШИБКА, ЧТО-ТО ПОШЛО НЕ ТАК</div> : (<Main movies={movies} onSearchMovie={onSearchMovie} handleChangeType={handleChangeType} valueOfType={type} />)}
         <Footer />
       </div>
     </>
